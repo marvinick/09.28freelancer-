@@ -1,0 +1,18 @@
+<div ng-show="course.students.length">
+  <h2>Student List for {{ course.name }}</h2>
+  <ul>
+    <li ng-repeat="item in course.students">
+      {{ item.name }}
+    </li>
+  </ul>
+</div>
+
+<div>
+  <h2>Add a student to {{ course.name }}</h2>
+  <form ng-submit="addStudent()" class="form-inline" role="form">
+    <div class="form-group">
+      <input type="text" ng-model="studentName" class="form-control" placeholder="Enter the student's name">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
