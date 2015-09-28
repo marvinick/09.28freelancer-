@@ -11,7 +11,7 @@ freelancer.directive("changeClass", function() {
   };
 })
 
-freelancer.directive('showonhoverparent', function() {
+freelancer.directive('showonhover', function() {
     return {
        link : function(scope, element, attrs) {
           element.parent().bind('mouseenter', function() {
@@ -23,6 +23,19 @@ freelancer.directive('showonhoverparent', function() {
        }
     };
 });
+
+// freelancer.directive('showonhover', function() {
+//     return {
+//        link : function(scope, element, attrs) {
+//           element.parent().bind('mouseenter', function() {
+//               element.toggleClass(hidden);
+//           });
+//           element.parent().bind('mouseleave', function() {
+//                element.toggleClass(hidden);
+//           });
+//        }
+//     };
+// });
 
 freelancer.directive("debug", function ($compile) {
   return {
