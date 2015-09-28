@@ -18,6 +18,8 @@
     <script src="services/UtilitiesFactory.js"></script>
     <script src="directives/myDirectives.js"></script>
 </head>
+
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
@@ -54,13 +56,16 @@
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
-        <div class="container">
+        <div class="container" ng-controller="FreelancersCtrl">
             <div class="row">
                 <div class="col-lg-6">
                     <h1 change-class="bg-warning text-warning text-center">Hire Expert re-Freelancers For Your Online Job</h1>
                     <p>Millions of small businesses use Freelancer to turn their ideas into reality</p>
                     <a class="btn btn-default page-scroll" href="#about">Hire</a>
                     <a class="btn btn-default page-scroll" href="#services">Work</a>
+                    <hr>
+                    <div sample-course course-name="ctrlCourse"></div>
+                    <div alert-user dial="alert(message)"></div>
                 </div>
                 <div class="col-md-6">
                   <img height="500" width="600" alt="Flower" src="images/nasa.png" />
