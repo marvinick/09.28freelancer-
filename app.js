@@ -2,27 +2,22 @@ var freelancer = angular.module('freelancer', ['ui.router']);
 
 freelancer.config(function($stateProvider, $urlRouterProvider) {
 
-  $stateProvider.state('home', {
-    url: "",
+  $stateProvider.state('freelancers', {
+    url: "/freelancers",
     views: {
-      'header': {
-        templateUrl: 'partials/header.html',
-      },
       'body': {
-        templateUrl: 'partials/home.html',
-      },
+        templateUrl: "partials/freelancers.html",
+        controller: 'FreelancersCtrl'
+      }
     }
   });
 
-  $stateProvider.state('courses', {
-    url: "/courses",
+  $stateProvider.state('jobs', {
+    url: "/jobs",
     views: {
-      'header': {
-        templateUrl: 'partials/header.html',
-      },
       'body': {
-        templateUrl: "partials/courses.html",
-        controller: 'CoursesCtrl'
+        templateUrl: "partials/jobs.html",
+        controller: 'JobsCtrl'
       }
     }
   });

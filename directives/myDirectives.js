@@ -1,35 +1,28 @@
-freelancer.directive("hometext", function() {
-  return {
-    template: "Back to the beginning"
-  }
-});
-
 freelancer.directive("changeClass", function() {
-  return function (scope, element, attrs) {
-    element.bind("click", function() {
-      element.toggleClass(attrs.changeClass);
-    });
-  }
+  return {
+    link: function (scope, element, attrs) {
+      element.bind("mouseenter", function() {
+        element.toggleClass(attrs.changeClass);
+      });
+      element.bind("mouseleave", function() {
+        element.toggleClass(attrs.changeClass);
+      });
+    }
+  };
 })
 
-freelancer.directive("sampleCourse", function() {
-  return {
-    scope: {
-      courseName:"="
-    },
-    template: '<div>{{courseName}}</div>'
-  }
-})
-
-freelancer.directive("alertUser", function() {
-  return {
-    scope: {
-      dial: "&"
-    },
-    template: '<input type="text" ng-model="value">' +
-              '<div class="button" ng-click="dial({message:value})">Alert!</div>'
-  }
-})
+freelancer.directive('showonhoverparent', function() {
+    return {
+       link : function(scope, element, attrs) {
+          element.parent().bind('mouseenter', function() {
+              element.show();
+          });
+          element.parent().bind('mouseleave', function() {
+               element.hide();
+          });
+       }
+    };
+});
 
 freelancer.directive("debug", function ($compile) {
   return {
