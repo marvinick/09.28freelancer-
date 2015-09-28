@@ -1,4 +1,4 @@
-courseRoster.controller('CoursesCtrl', function CoursesCtrl($scope, CoursesFactory) {
+freelancer.controller('FreelancersCtrl', function FreelancersCtrl($scope) {
   $scope.courses = CoursesFactory.courses;
   $scope.CoursesFactory = CoursesFactory;
   $scope.ctrlCourse = "shoot"

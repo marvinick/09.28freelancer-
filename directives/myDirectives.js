@@ -1,10 +1,10 @@
-courseRoster.directive("hometext", function() {
+freelancer.directive("hometext", function() {
   return {
     template: "Back to the beginning"
   }
 });
 
-courseRoster.directive("changeClass", function() {
+freelancer.directive("changeClass", function() {
   return function (scope, element, attrs) {
     element.bind("click", function() {
       element.toggleClass(attrs.changeClass);
@@ -12,7 +12,7 @@ courseRoster.directive("changeClass", function() {
   }
 })
 
-courseRoster.directive("sampleCourse", function() {
+freelancer.directive("sampleCourse", function() {
   return {
     scope: {
       courseName:"="
@@ -21,7 +21,7 @@ courseRoster.directive("sampleCourse", function() {
   }
 })
 
-courseRoster.directive("alertUser", function() {
+freelancer.directive("alertUser", function() {
   return {
     scope: {
       dial: "&"
@@ -31,7 +31,7 @@ courseRoster.directive("alertUser", function() {
   }
 })
 
-courseRoster.directive("debug", function ($compile) {
+freelancer.directive("debug", function ($compile) {
   return {
     terminal: true,
     priority: 1000000,

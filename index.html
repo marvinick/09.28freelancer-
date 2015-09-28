@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="freelancer">
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,13 @@
     <title>re-freelancer</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/scrolling-nav.css" rel="stylesheet">
-
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/FreelancersController.js"></script>
+    <script src="services/FreelancersFactory.js"></script>
+    <script src="services/UtilitiesFactory.js"></script>
+    <script src="directives/myDirectives.js"></script>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -51,7 +57,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h1>Hire Expert re-Freelancers For Your Online Job</h1>
+                    <h1 change-class="bg-warning text-warning text-center">Hire Expert re-Freelancers For Your Online Job</h1>
                     <p>Millions of small businesses use Freelancer to turn their ideas into reality</p>
                     <a class="btn btn-default page-scroll" href="#about">Hire</a>
                     <a class="btn btn-default page-scroll" href="#services">Work</a>

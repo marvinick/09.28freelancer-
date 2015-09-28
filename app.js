@@ -1,6 +1,6 @@
-var courseRoster = angular.module('courseRoster', ['ui.router']);
+var freelancer = angular.module('freelancer', ['ui.router']);
 
-courseRoster.config(function($stateProvider, $urlRouterProvider) {
+freelancer.config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider.state('home', {
     url: "",
@@ -26,31 +26,4 @@ courseRoster.config(function($stateProvider, $urlRouterProvider) {
       }
     }
   });
-
-  $stateProvider.state('courses.students', {
-    url: "/:courseId",
-    views: {
-      'header': {
-        templateUrl: 'partials/header.html',
-      },
-      'body': {
-        templateUrl: "partials/courses.students.html",
-        controller: 'StudentsCtrl'
-      }
-    }
-  });
-
-  $stateProvider.state('course', {
-    url: "/course",
-    views: {
-      'header': {
-        templateUrl: 'partials/header.html',
-      },
-      'body': {
-        templateUrl: "partials/course.detail.html",
-        controller: 'CoursesCtrl'
-      }
-    }
-  });
-
 });
