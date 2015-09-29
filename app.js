@@ -1,4 +1,4 @@
-var freelancer = angular.module('freelancer', ['ui.router', 'ui.bootstrap']);
+var freelancer = angular.module('freelancer', ['ui.router', 'ui.bootstrap', 'ngAnimate']);
 
 freelancer.config(function($stateProvider, $urlRouterProvider) {
 

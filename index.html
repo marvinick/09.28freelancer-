@@ -16,7 +16,7 @@
     <script src="lib/angular.js"></script>
     <script src="lib/angular-ui-router.js"></script>
     <script src="lib/ui-bootstrap-0.4.0.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular-animate.min.js"></script>
     <script src="app.js"></script>
     <script src="controllers/FreelancersController.js"></script>
     <script src="services/FreelancersFactory.js"></script>
@@ -35,7 +35,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand page-scroll" href="#page-top">re-Freelancer</a>
+              <a class="navbar-brand page-scroll" href="#page-top">Freelancer</a>
           </div>
 
           <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -67,27 +67,9 @@
                     <h2><a class="btn btn-info btn-lg" ui-sref="freelancers" ng-mouseenter="lions = !lions" ng-class="{ active: lions }">Hire</a></h4>
                     <h2><a class="btn btn-info btn-lg" ui-sref="jobs" ng-mouseenter="cranes = !cranes" ng-class="{ active: cranes }">Work</a></h4>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" ng-show="lions">
                   <img height="500" width="600" alt="Flower" src="images/nasa.png" />
                 </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6">
-
-                <!-- show and hide the lion picture -->
-                <div class="jumbotron" ng-show="lions">
-                  <img src="http://images.politico.com/global/2014/01/10/140110_marijuana_ap_605.jpg" class="img-responsive img-thumbnail">
-                </div>
-
-              </div>
-              <div class="col-xs-6">
-
-                <!-- show and hide the crane picture -->
-                <div class="jumbotron" ng-show="cranes">
-                  <img src="http://wiki.mindseyesociety.org/images/2/20/BOOZE.jpg" class="img-responsive img-thumbnail">
-                </div>
-
-              </div>
             </div>
         </div>
     </section>
