@@ -7,18 +7,18 @@
 }
 
 body {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
 }
 
 html {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
 }
 
 
 
-@media(min-width:767px) {
+@media {
     .navbar {
         padding: 20px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -32,8 +32,9 @@ html {
 }
 
 .intro-section {
-    height: 80%;
-    padding-top: 100px;
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 50px;
     text-align: center;
     background: #fff;
 }
@@ -43,6 +44,7 @@ html {
     padding-top: 75px;
     text-align: center;
     background: #eee;
+    padding-bottom: 50px;
 }
 
 .services-section {
@@ -50,7 +52,7 @@ html {
     padding-top: 50px;
     text-align: center;
     background: #fff;
-
+    padding-bottom: 50px;
 }
 
 

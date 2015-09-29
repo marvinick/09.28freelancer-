@@ -3,14 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>re-freelancer</title>
-
+    <title>freelancer</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="lib/angular.js"></script>
@@ -26,7 +25,7 @@
 
 <body>
 
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
           <div class="navbar-header page-scroll">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -40,7 +39,7 @@
 
           <div class="collapse navbar-collapse navbar-ex1-collapse">
               <ul class="nav navbar-nav">
-                  <li class="hidden">
+                  <li>
                       <a class="page-scroll" href="#page-top"></a>
                   </li>
                   <li>
@@ -62,13 +61,14 @@
         <div class="container" ng-controller="FreelancersCtrl">
             <div class="row">
                 <div class="col-lg-6">
-                    <h1 change-class="bg-danger text-danger">Hire Expert re-Freelancers For Your Online Job</h1>
-                    <p>Millions of small businesses use Freelancer to turn their ideas into reality</p>
-                    <h2><a class="btn btn-info btn-lg" ui-sref="freelancers" ng-mouseenter="lions = !lions" ng-class="{ active: lions }">Hire</a></h4>
-                    <h2><a class="btn btn-info btn-lg" ui-sref="jobs" ng-mouseenter="cranes = !cranes" ng-class="{ active: cranes }">Work</a></h4>
+                    <h1 change-class="bg-danger text-danger">Hire Expert Freelancers For Your Online Job</h1>
+                    <h5>Millions of small businesses use Freelancer to turn their ideas into reality</h5>
+                    <br>
+                    <a class="btn btn-default btn-lg" ui-sref="freelancers">Hire</a>
+                    <a class="btn btn-default btn-lg" ui-sref="jobs">Work</a>
                 </div>
-                <div class="col-md-6" ng-show="lions">
-                  <img height="500" width="600" alt="Flower" src="images/nasa.png" />
+                <div class="col-lg-6">
+                  <img height="400" width="600" alt="Flower" src="images/nasa.png" />
                 </div>
             </div>
         </div>
@@ -84,19 +84,17 @@
                 <div class="col-md-2" ng-mouseenter="texts = !texts" ng-class="{ active: texts }">
                   <img height="150" width="150" alt="Flower" src="images/lightbulb.png" />
                   <h3 change-class="bg-danger text-danger">Post Your Job</h3>
-                  <div>
-                    <span ng-show="texts"><p>Describe what you need done and tell us your budget.</p></span>
-                  </div>
+                    <p ng-show="texts">Describe what you need done and tell us your budget.</p></span>
                 </div>
                 <div class="col-md-2">
                   <img height="150" width="150" alt="Flower" src="images/people.png" />
                   <h3>Select a Bid</h3>
-                  <p>Receive competitive quotes and choose the right freelancer.</p>
+                  <p ng-show="texts">Receive competitive quotes and choose the right freelancer.</p>
                 </div>
                 <div class="col-md-2">
                   <img height="150" width="150" alt="Flower" src="images/check.png" />
                   <h3>Job Done</h3>
-                  <p>The freelancer completes the work. You pay only when satisfied.</p>
+                  <p ng-show="texts">The freelancer completes the work. You pay only when satisfied.</p>
                 </div>
 
             </div>
@@ -107,8 +105,8 @@
     <section id="services" class="services-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Turn Big Ideas Into Great Products</h1>
+                <div class="col-lg-12" ng-mouseenter="lions = !lions" ng-class="{ active: lions }">
+                    <h1>Dream On!</h1>
                     <h4>You can get anything done on Freelancer. Which great idea will you launch today?</h4>
                 </div>
             </div>
@@ -161,9 +159,9 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-        <div class="container">
+        <div class="container" ng-mouseenter="lions = !lions" ng-class="{ active: lions }">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" >
                   <h1>What Do You Need Done?</h1>
                   <h4>With experts in over 850 categories, the only real question is where to start. Check out some of our most popular categories below.</h4>
                 </div>
@@ -173,24 +171,24 @@
             <div class="row">
               <div class="col-md-1">
               </div>
-              <div class="col-md-1">
+              <div class="col-md-1" ng-show="lions">
                 <img height="80" width="50" alt="Flower" src="images/websitetag.png" />
               </div>
-              <div class="col-md-2">
+              <div class="col-md-2" ng-show="lions">
                 <h4>Websites, IT & Software</h4>
                 <p>PHP HTML MySQL Javascript Software Architecture SEO Wordpress and more</p>
               </div>
-              <div class="col-md-1">
+              <div class="col-md-1" ng-show="lions">
                 <img height="80" width="50" alt="Flower" src="images/mobilephones.png" />
               </div>
-              <div class="col-md-2">
+              <div class="col-md-2" ng-show="lions">
                 <h4>Mobile Phones & Computing</h4>
                 <p>PHP HTML MySQL Javascript Software Architecture SEO Wordpress and more</p>
               </div>
-              <div class="col-md-1">
+              <div class="col-md-1" ng-show="lions">
                 <img height="80" width="50" alt="Flower" src="images/writingcontent.png" />
               </div>
-              <div class="col-md-2">
+              <div class="col-md-2" ng-show="lions">
                 <h4>Writing & Content</h4>
                 <p>Articles Copywriting Article Rewriting Copy Typing Blog Ghostwriting and more</p>
               </div>
@@ -292,6 +290,7 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+
 
 </body>
 

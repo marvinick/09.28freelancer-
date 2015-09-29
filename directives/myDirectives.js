@@ -11,19 +11,6 @@ freelancer.directive("changeClass", function() {
   };
 })
 
-freelancer.directive('showOnHover', function() {
-    return {
-       link : function(scope, element, attrs) {
-          element.parent().bind('mouseenter', function() {
-            element.show();
-          });
-          element.parent().bind('mouseleave', function() {
-            element.hide();
-          });
-       }
-    };
-});
-
 freelancer.directive("debug", function ($compile) {
   return {
     terminal: true,

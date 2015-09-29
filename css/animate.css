@@ -10,7 +10,7 @@ Copyright (c) 2015 Daniel Eden
 .ng-hide-add         { animation:0.5s flipOutX ease; }
 
 /* when showing the picture */
-.ng-hide-remove      { animation:0.5s pulse ease; }
+.ng-hide-remove      { animation:0.5s lightSpeedOut ease; }
 
 
 .animated {
