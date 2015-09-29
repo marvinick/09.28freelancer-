@@ -1,6 +1,7 @@
-freelancer.controller('FreelancersCtrl', function FreelancersCtrl($scope) {
+freelancer.controller('FreelancersCtrl', function FreelancersCtrl($scope, FreelancersFactory) {
+  $scope.freelancers = FreelancersFactory.freelancers;
+  $scope.FreelancersFactory = FreelancersFactory;
 
-  $scope.ctrlCourse = "shoot"
 
   $scope.alert = function(message) {
     alert(message)

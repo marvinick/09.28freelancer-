@@ -1,23 +1,23 @@
-<div ng-show="freelancers.length">
+<div class="freelancer" ng-controller="FreelancersCtrl">
+  <h4><a ui-sref="home">Home</a></h4>
+  <div ng-show="freelancers.length">
 
-  <h1>Freelancers Available </h1>
-  <div class="well" debug>
-  <ul ng-repeat="item in freelancers">
-      {{ item.name }}
-  </ul>
-</div>
-</div>
-
-
-  <div class="col-md-4">
-    <h3>Add a new freelancer</h3>
-    <form ng-submit="FreelancersFactory.hireFreelancer()" class="form-inline" role="form">
-      <div class="form-group">
-        <input type="text" ng-model="FreelancersFactory.freelancerName" class="form-control" placeholder="Enter a course name">
-      </div>
-      <button type="submit" class="btn btn-info">Submit</button>
-    </form>
+    <h1>Freelancers Available </h1>
+    <ul ng-repeat="item in freelancers">
+        {{ item.name }}
+    </ul>
   </div>
 
+    <div class="col-md-4">
+      <h3>Add a new freelancer</h3>
+      <form ng-submit="FreelancersFactory.hireFreelancer()" class="form-inline" role="form">
+        <div class="form-group">
+          <input type="text" ng-model="FreelancersFactory.freelancerName" class="form-control" placeholder="Enter a course name">
+        </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+    </div>
 
-<div ui-view="body"> </div>
+
+  <div ui-view="body"> </div>
+</div>
