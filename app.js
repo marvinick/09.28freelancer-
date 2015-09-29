@@ -11,7 +11,7 @@ freelancer.config(function($stateProvider, $urlRouterProvider) {
       'body': {
         templateUrl: 'partials/home.html',
         controller: 'FreelancersCtrl'
-      },
+      }
     }
   });
 
@@ -24,6 +24,9 @@ freelancer.config(function($stateProvider, $urlRouterProvider) {
       'body': {
         templateUrl: "partials/freelancers.html",
         controller: 'FreelancersCtrl'
+      },
+      'body': {
+        templateUrl: "partials/footer.html"
       }
     }
   });

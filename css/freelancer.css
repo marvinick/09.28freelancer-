@@ -18,7 +18,8 @@ html {
 
 .freelancer {
   padding-left: 30px;
-  padding-top: 60px;
+  padding-top: 80px;
+  font-family: "Courier New", Times, serif;
 }
 
 
@@ -41,14 +42,17 @@ html {
     padding-bottom: 50px;
     text-align: center;
     background: #fff;
+    font-family: "Courier New", Times, serif;
 }
 
 .about-section {
     height: 50%;
     padding-top: 75px;
     text-align: center;
-    background: #eee;
+    background: #292929;
     padding-bottom: 50px;
+    color: white;
+    font-family: "Courier New", Times, serif;
 }
 
 .services-section {
@@ -57,6 +61,8 @@ html {
     text-align: center;
     background: #fff;
     padding-bottom: 50px;
+    font-family: "Courier New", Times, serif;
+
 }
 
 
@@ -64,5 +70,13 @@ html {
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #eee;
+    background: #292929;
+    color: white;
+    font-family: "Courier New", Times, serif;
+}
+
+.footer-section {
+  height: 50%;
+  background: #fff;
+  font-family: "Courier New", Times, serif;
 }
