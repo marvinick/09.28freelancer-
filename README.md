@@ -1,19 +1,20 @@
-# [re-freelancer]
+# freelancer
 
-[Scrolling Nav] This project is to recreate freelancer.com  
+ This project is to recreate freelancer.com  
 
 ## Getting Started
 
 clone https://github.com/marvinick/09.28freelancer-
 
+run $python -m SimpleHTTPServer 
 
 ## Creator
 
-re-freelancer was created by and is maintained by **Marvin Nikijuluw**
+freelancer was created by and is maintained by **Marvin Nikijuluw**
 
 ## Copyright and License
 
-Copyright (c) 2015 {List of contribtors}
+Copyright (c) 2015
 
 This software is licensed under the MIT license.
 
